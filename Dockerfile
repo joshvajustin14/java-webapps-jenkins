@@ -1,6 +1,7 @@
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
-COPY target/java-webapp2-1.0.jar app.jar
-EXPOSE 8083
+COPY target/java-webapp-1.0.jar app.jar
+EXPOSE 8081
 CMD ["java", "-jar", "app.jar"]
+
 
